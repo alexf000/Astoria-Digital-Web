@@ -1,0 +1,163 @@
+html{
+  text-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: -0.01rem;
+}
+
+h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+p{
+  font-family: "DM Mono", monospace;
+  letter-spacing: -0.06em;
+}
+
+a {
+  font-family: "DM Mono", monospace;
+  font-size: 1.5em;
+  color: black;
+  text-decoration:none;
+}
+
+.item-centered-txt a:hover {
+  text-decoration:underline;
+  background-color: #ffda00;
+}
+
+/*COLORS*/
+.decal-ad{
+  background-color: #ffda00;
+}
+
+.decal-bt {
+  background-color: #2077c7;
+  color: white;
+}
+
+.decal-ama {
+  background-color: #ff7a00;
+  color: white;
+}
+
+.decal-pd {
+  background-color: #000000;
+  color: white;
+}
+/* COLORS END */
+
+.headbar {
+  border: 3px solid black;
+  display:flex;
+  flex-direction: row;
+}
+
+.title{
+  width: 33.3%;
+  border-right: 3px solid black;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 500;
+  padding: auto auto;
+}
+
+.slogan{
+  width: 27.3%;
+  padding: 1% 3%;
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.4%;
+  text-align: center;
+  padding: auto auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  clear:both;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+}
+
+.project-item {
+  display:flex;
+  flex-direction: column;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.item-title{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 25px 50px;
+}
+
+.item-description {
+  flex-grow:1;
+  padding: 50px;
+}
+
+.item-centered{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 25px 50px;
+  border-top: 1px dashed black;
+}
+
+.item-centered-img{
+  height: 96px;
+  width: 96px;
+}
+
+.item-centered-txt{
+  padding-left: 35px;
+}
+
+.future {
+  height: 150px;
+  color:white;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.6em;
+  font-weight: 300;
+  border: 3px solid black;
+}
+
+/* ANIMATION */
+.title:hover span {
+  animation: flicker 1.2s reverse infinite;
+}
+
+.future:hover span {
+  animation: flicker 0.7s reverse infinite;
+}
+
+@keyframes flicker {
+  0%, 10%, 20%, 30%, 40%, 49.9% {
+    opacity:0;
+  }
+  50%, 60%, 70%, 80%, 90%, 99.9% {
+    opacity: 1;
+  }
+}

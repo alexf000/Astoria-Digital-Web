@@ -1,5 +1,5 @@
 # Astoria-Digital-Web
-Website designs for Astoria Digital
+Website designs for [Astoria Digital](https://astoria.digital)
 
 [Design schemes](https://www.figma.com/file/LXKWblcPXToV1uVakYXbhB/Astoria-Digital?node-id=70%3A2)
 

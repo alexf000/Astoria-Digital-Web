@@ -326,13 +326,13 @@ a {
 }
 
 .icon {
-  width:64px;
-  height:64px;
+  width:32px;
+  height:32px;
 }
 
 .item-centered-img{
-  height: 64px;
-  width: 64px;
+  height: 32px;
+  width: 32px;
 }
 
 .item-centered-txt{

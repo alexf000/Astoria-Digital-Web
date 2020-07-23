@@ -101,7 +101,7 @@ a {
     width: 96px;
   }
 
-    .img {
+img {
   width:96px;
   height:96px;
 }
@@ -226,7 +226,7 @@ a {
     width: 64px;
   }
 
-  .img {
+img {
   width:64px;
   height:64px;
 }
@@ -345,7 +345,7 @@ a {
   width: 32px;
 }
   
-.img {
+img {
   width:32px;
   height:32px;
 }

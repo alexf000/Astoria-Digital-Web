@@ -100,11 +100,6 @@ a {
     height: 96px;
     width: 96px;
   }
-
-img {
-  width:96px;
-  height:96px;
-}
   
   .item-centered-txt{
     padding-left: 35px;
@@ -225,11 +220,6 @@ img {
     height: 64px;
     width: 64px;
   }
-
-img {
-  width:64px;
-  height:64px;
-}
   
   .item-centered-txt{
     padding-left: 25px;
@@ -332,7 +322,7 @@ img {
   align-items: center;
   justify-content: left;
   font-size: 1.2em;
-  padding: 0 25px;
+  padding: 0 25px 10px 25px;
 }
 
 .icon {
@@ -343,11 +333,6 @@ img {
 .item-centered-img{
   height: 32px;
   width: 32px;
-}
-  
-img {
-  width:32px;
-  height:32px;
 }
 
 .item-centered-txt{

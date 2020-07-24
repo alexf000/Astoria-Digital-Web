@@ -2,19 +2,18 @@ html{
   text-size: 16px;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, p{
+  font-family: "DM Mono", monospace;
+  letter-spacing: -0.06em;
+}
+
+h2,h3,h4,h5,h6 {
   font-family: "Fjalla One", sans-serif;
   letter-spacing: -0.01rem;
 }
 
-h1 {
-  font-size: 2em;
+h2{
   text-transform: uppercase;
-}
-
-p{
-  font-family: "DM Mono", monospace;
-  letter-spacing: -0.06em;
 }
 
 a {

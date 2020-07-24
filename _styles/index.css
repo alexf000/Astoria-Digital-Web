@@ -71,7 +71,9 @@ a {
     width: 33.3%;
     border-right: 3px solid black;
     text-align: center;
-    font-size: 1.2em;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
     font-weight: 500;
     padding: auto auto;
   }

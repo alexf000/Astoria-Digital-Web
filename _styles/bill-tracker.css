@@ -590,7 +590,6 @@ padding-bottom: 1em;
 
 /* Grid specific {{{ */
 
-@media screen and (min-width: 700px) {
   .site-header__title {
     border-right: 3px solid #000;
   }
@@ -600,7 +599,6 @@ padding-bottom: 1em;
     grid-template-columns: 3fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(5);
   }
-}
 
 /* }}} */
 

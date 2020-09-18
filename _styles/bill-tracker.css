@@ -502,34 +502,64 @@ a:hover .callout__text {
 }
 /* }}} */
 
+/* Search bar {{{*/
+.search-bar{
+  display:flex;
+  flex-flow: row nowrap;
+  padding:2ch;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+}
+
+.search-bar input{
+  flex-grow:1;
+  padding:1ch;
+  border-width:0;
+  border-color:#000;
+}
+
+.search-bar button{
+  border:1px solid  #000;
+  background-color: #fff;
+  color:#000;
+}
+
+.search-bar button:hover{
+  background-color: #000;
+  color:#fff;
+}
+
+.search-bar button:active{
+  border:1px solid  var(--highlight-blue);
+  background-color: var(--highlight-blue);
+  color:#fff;
+}
+/* }}} */
+
+
 /* Items {{{ */
 .table-head{
   position: sticky;
   top: 0%;
   background-color:#fff;
+}
+
+.table-head-grid{
   display: flex;
   font-weight: 500;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-top: 3px solid #000;
   border-bottom: 3px solid #000;
   border-right: 1px solid #000;
 }
-.sign-gov{
+
+.table-head-grid:last-of-type{
   border-right: none;
 }
 
-.bill-description,
-.overall-status,
-.introduced,
-.in-committee,
-.on-floor,
-.pass-two,
-.deliver-gov,
 .sign-gov{
-  border-bottom: 3px solid #000;
-  margin:0;
+  border-right: none;
 }
 
 .bill-description,
@@ -543,6 +573,8 @@ a:hover .callout__text {
   display:flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 3px solid #000;
+  margin:0;
 }
 
 .bill-description {
@@ -580,35 +612,57 @@ a:hover .callout__text {
 }
 
 .pass-senate{
-padding-top: 1em;
+  padding-top: 1em;
 }
 .pass-assembly{
-padding-bottom: 1em;
+  padding-bottom: 1em;
 }
 
+.sign-gov{
+  border-right:none;
+}
 /* }}} */
 
 /* Grid specific {{{ */
 
+@media screen and (min-width: 1160px) {
   .site-header__title {
     border-right: 3px solid #000;
+  }
+
+  .search-bar{
+    grid-column: 1/-1;
+  }
+
+  .search-bar span{
+    font-style: italic;
+    color: #777;
+  }
+
+  .search-bar svg{
+    width: 36px;
+    height: 36px;
+  }
+
+  .table-head {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(1);
   }
 
   .content {
     display: grid;
     grid-template-columns: 3fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(5);
+    grid-template-rows: repeat(4);
   }
-
+}
 /* }}} */
 
 /* Footer {{{ */
-
 .site-footer {
   padding: 4rem;
   background-color: var(--highlight-yellow);
 }
-
 /* }}} */
 
 /*

@@ -46,27 +46,30 @@
     </section>
 
 
-    <section  class="content">
-      <!-- project 1 -->
-      <!-- table head, fixed position -->
-      <div class="table-head">DESCRIPTION</div>
-      <div class="table-head overall-status">OVERALL STATUS</div>
-      <div class="table-head">INTRODUCED</div>
-      <div class="table-head">IN COMMITTEE</div>
-      <div class="table-head">ON FLOOR CALENDAR</div>
-      <div class="table-head pass-two" style="padding:0;">
-        <p style="font-weight:500; border-bottom: 1px solid #000; margin:0; padding:1em;">PASSED SENATE</p>
-        <p style="font-weight:500; margin:0; padding: 1em;">PASSED ASSEMBLY</p>
+    <section  class="wrapper"><!--search bar and table head fixed position--> 
+      <div class="table-head"><!-- search bar-->
+        <div class="search-bar">
+          <input type="text" placeholder="Search by bill title or descrition...">
+          <button type="submit">Search</button>
+        </div>
+        <!-- table head-->
+        <div class="table-head-grid">DESCRIPTION</div>
+        <div class="table-head-grid overall-status">OVERALL STATUS</div>
+        <div class="table-head-grid">INTRODUCED</div>
+        <div class="table-head-grid">IN COMMITTEE</div>
+        <div class="table-head-grid">ON FLOOR CALENDAR</div>
+        <div class="table-head-grid pass-two" style="padding:0;">
+          <p style="font-weight:500; border-bottom: 1px solid #000; margin:0; padding:1em;">PASSED SENATE</p>
+          <p style="font-weight:500; margin:0; padding: 1em;">PASSED ASSEMBLY</p>
+        </div>
+        <div class="table-head-grid">DELIVERED TO GOVERNOR</div>
+        <div class="table-head-grid">SIGNED BY GOVERNOR</div>
       </div>
-      <div class="table-head">DELIVERED TO GOVERNOR</div>
-      <div class="table-head">SIGNED BY GOVERNOR</div>
-      <!--table head ends-->
+        <!--table head ends-->
 
-      <!-- table rows -->
-      <!-- probably gonna make it a series of flexes -->
-
+        <!-- table rows -->
+        <section class="content">
       <!-- ITEM 1 -->
-
       <div class="S8496 bill-description"><!-- bill name and description -->
         <h2>Senate Bill S8496</h2><!-- name -->
         <p>Relates to the disclosure of law enforcement disciplinary records; and to repeal section 50-a of the civil rights law relating thereto</p><!-- bill name and description -->
@@ -193,7 +196,8 @@
     </div>
     <!--item 3 ends-->
 
-  </section>
+      </section><!--end table grids-->
+    </section><!--end entire table-->
 </main><!-- end site-content -->
 
 <footer class="site-footer">
